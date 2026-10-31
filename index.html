@@ -2,33 +2,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BABA CLASSTECH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BABA CLASSTECH | Education Institute</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #172554;
+}
+
+header {
+    background: #101d36;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #facc15;
+    color: #172554;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+section {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 28px 18px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px #00000012;
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.about {
+    background: white;
+    line-height: 1.8;
+}
+
+.contact {
+    background: #dbeafe;
+}
+
+footer {
+    background: #101d36;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media(max-width:600px) {
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <h1>WELCOME TO BABA CLASSTECH</h1>
+<header>
+    <div class="logo">BABA CLASSTECH</div>
 
-    <h2>Learn Today, Lead Tomorrow!</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Learn Today, Lead Tomorrow!</h1>
 
     <p>
-        BABA CLASSTECH is an Education
-        and Computer Training Institute.
+        Welcome to BABA CLASSTECH
+        <br>
+        Education and Computer Training Institute
     </p>
 
-    <h3>Our Courses</h3>
+    <a href="#courses" class="btn">Explore Our Courses</a>
+</div>
 
-    <ul>
-        <li>Computer Courses</li>
-        <li>Class 3 to 10 Coaching</li>
-        <li>IIT Foundation</li>
-        <li>Spoken English</li>
-    </ul>
+<section id="courses">
+    <h2>Our Courses</h2>
 
-    <h3>Contact Us</h3>
+    <div class="courses">
 
-    <p>Welcome to our Institute!</p>
+        <div class="card">
+            <h3>School Coaching</h3>
+            <p>Class 3 to 10</p>
+            <p>Math, Science and More</p>
+        </div>
+
+        <div class="card">
+            <h3>Computer Courses</h3>
+            <p>Basic Computer</p>
+            <p>MS Office and Practical Skills</p>
+        </div>
+
+        <div class="card">
+            <h3>IIT Foundation</h3>
+            <p>Mathematics and Science</p>
+            <p>Build Strong Concepts</p>
+        </div>
+
+        <div class="card">
+            <h3>Tally Course</h3>
+            <p>Accounting and GST Basics</p>
+            <p>Practical Training</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About BABA CLASSTECH</h2>
+
+    <p>
+        BABA CLASSTECH is an education and
+        computer training institute.
+
+        Our mission is to provide quality education,
+        practical computer knowledge and
+        skill-based learning to students.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>For Admission and Course Details</p>
+    <p>Contact BABA CLASSTECH</p>
+</section>
+
+<footer>
+    <p>© 2026 BABA CLASSTECH. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
